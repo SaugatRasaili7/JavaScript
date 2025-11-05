@@ -1,13 +1,17 @@
-function checker(a){
-    if(a%2==0){
-        console.log("The number is even");
+function great(a,b,c){
+    if(a>b && a>c){
+        console.log(`The number ${a} is greater`);
 
+    }
+    else if(b>c && b>a){
+        console.log(`The Number ${b} is Greater `);
     }
 
     else{
-        console.log("The number is odd");
+        console.log(`The number ${c} is Greater`);
+
     }
-    return a;       
+    return a,b,c;
 }
 
- checker(5);
+great(5,9,22);
